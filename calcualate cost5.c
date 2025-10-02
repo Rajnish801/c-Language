@@ -1,19 +1,26 @@
 #include <stdio.h>
 
 int main() {
-    int marks[5], i, total = 0;
-    float percentage;
+    float totalSellingPrice, totalProfit, totalCostPrice, costPriceOneItem;
 
-    printf("Enter marks in 5 subjects (out of 100):\n");
-    for(i = 0; i < 5; i++) {
-        scanf("%d", &marks[i]);
-        total += marks[i];
-    }
+    printf("=== Cost Price Calculator ===\n");
 
-    percentage = (total / 500.0) * 100;
+    
+    printf("Enter the total selling price of 15 items: ");
+    scanf("%f", &totalSellingPrice);
 
-    printf("Aggregate Marks = %d\n", total);
-    printf("Percentage = %.2f%%\n", percentage);
+    printf("Enter the total profit earned on 15 items: ");
+    scanf("%f", &totalProfit);
+    totalCostPrice = totalSellingPrice - totalProfit;
+    costPriceOneItem = totalCostPrice / 15;
+    printf("\n--- Calculation Details ---\n");
+    printf("Total Selling Price = %.2f\n", totalSellingPrice);
+    printf("Total Profit Earned = %.2f\n", totalProfit);
+    printf("Total Cost Price    = %.2f\n", totalCostPrice);
+    printf("Cost Price of 1 item= %.2f\n", costPriceOneItem);
+
+    printf("\nTherefore, the cost price of one item is: %.2f\n", costPriceOneItem);
 
     return 0;
 }
+
