@@ -4,8 +4,8 @@ int main() {
     double radius;
     double volume;
 
-    printf("--- Sphere Volume Calculator ---\n");
-    printf("This program calculates the volume of a sphere.\n\n");
+    printf("Sphere Volume Calculator \n");
+    printf("This program calculates the volume of a sphere.\n");
 
     printf("Enter the radius of the sphere (in units): ");
 
@@ -24,7 +24,6 @@ int main() {
     printf("\n--- Result ---\n");
     printf("Radius entered: %.2f units\n", radius);
     printf("The volume of the sphere is: %.4f cubic units\n", volume);
-    printf("----------------\n");
 
     return 0; 
 }
