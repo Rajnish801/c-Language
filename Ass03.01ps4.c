@@ -15,7 +15,6 @@ int main() {
         else{
             printf("The largest number is:-%d\n",c);
         }
-    }
     else{
         if(b>=c){
             printf("The largest number is:-%d\n",b);
@@ -23,7 +22,5 @@ int main() {
         else{
              printf("The largest number id :-%d\n",c);
         }
-    }
-
   return 0;
 }
